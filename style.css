@@ -1,0 +1,192 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 140vh;
+    background-image: url("images/neon-genesis-4.gif");
+        background-size: cover;
+}
+
+section{
+    width:100%;
+    display: flex;
+    justify-content: center;
+        
+        
+}
+footer{
+    margin-top:30px;
+    text-align: center;
+}
+span{
+    display:block;
+    font-size:130px;
+}
+
+
+.container{
+   
+    width: 80%;
+    display:grid;
+    grid-template-columns: 24% 24% 24% 24% ;
+    grid-template-rows: 300px 200px 200px;
+    column-gap:1.5%;
+    row-gap:20px;
+    
+}
+h1{
+    line-height: .8;
+}
+.episode{
+    text-align:center;
+    font-family:arial;
+    line-height:1.5;
+    font-size:60px;
+}
+.header{
+
+    grid-column:span 4;
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: "Times",Times New Roman MT Std Bold Condensed ;
+    font-style: Bold Condensed;
+    color:white;
+    
+    font-size: 70px;
+    
+
+   
+}
+.grid-item{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    gap:20px;
+    color:white;
+}
+
+.grid-item button{
+    width:150px;
+    height:150px;
+    
+    outline: none;
+    border: 15px solid ;
+    border-radius:9px;
+    border-image: url(./images/download.jpg) ;
+    border-image-slice: 27 21 27 22;
+    border-image-repeat: stretch;
+    -webkit-transition-duration: 0.4s;
+        /* Safari */
+        transition-duration: 0.4s;
+    
+  
+}
+button:hover {
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255);
+}
+
+.w {
+
+    background-image: url("./images/shinji.png");
+    background-size: contain;
+}
+
+.a {
+    background-image: url("./images/kaji.png");
+    background-size: cover;
+
+}
+
+.s {
+    background-image: url("./images/kaworu.png");
+    background-size: cover;
+
+}
+
+.d {
+    background-image: url("./images/misato.jpg");
+    background-size: cover;
+
+}
+
+.j {
+    background-image: url("./images/rei.jpg");
+    background-size: cover;
+
+}
+
+.k {
+    background-image: url("./images/asuka.jpg");
+    background-size: cover;
+    
+
+}
+
+.gif-misato{
+    background-image:url("./Gif/misato.gif");
+    background-size:cover;
+}
+.gif-asuka{
+    background-image: url("./Gif/asuka.gif");
+        background-size: cover;
+}
+.gif-rei {
+    background-image: url("./Gif/rei.gif");
+    background-size: cover;
+}
+.gif-kaji{
+    background-image: url("./Gif/kaji.gif");
+    background-size: cover;
+    
+}
+.gif-shinji {
+    background-image: url("./Gif/shinji.gif");
+    background-size: cover;
+
+}
+.gif-kaworu {
+    background-image: url("./Gif/kaworu.gif");
+    background-size: cover;
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+    body {
+            height: 120vh;
+            background-image: url("images/neon-genesis-2.gif");
+            background-size: cover;
+        }
+    .container{
+        width: 80%;
+            display: grid;
+            grid-template-columns: 45% 45%;
+            grid-template-rows: 150px 200px 200px;
+            column-gap: 5%;
+            row-gap: 20px;
+
+
+    }
+    .header{
+        grid-column:span 2;
+        font-size:20px;
+    }
+    span{
+        font-size:50px;
+    }
+    .episode{
+        font-size:10px;
+    }
+}
