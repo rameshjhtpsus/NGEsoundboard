@@ -8,8 +8,8 @@ var audio = new Audio('./sounds/tom-1.mp3');
 function caseSound(key) {
     switch (key) {
            case "w":
-               var crash = new Audio("sounds/shinji.mp3");
-            crash.play();
+               var shinjiAudio = new Audio("sounds/shinji.mp3");
+                shinjiAudio.play();
             var shinjiGif = document.querySelector("." + key);
                 shinjiGif.classList.add("gif-shinji");
                 
@@ -22,8 +22,8 @@ function caseSound(key) {
             
                break;
             case "a":
-                var kickbass = new Audio("sounds/Kaji.mp3");
-                kickbass.play();
+                var kajiAudio = new Audio("sounds/Kaji.mp3");
+                kajiAudio.play();
                 var kajiGif = document.querySelector("." + key);
                 kajiGif.classList.add("gif-kaji");
                 
@@ -34,10 +34,10 @@ function caseSound(key) {
             
                break;
             case "s":
-               var snare = new Audio("sounds/Kaworu.mp3");
-            snare.play();
-            var kaworuGif = document.querySelector("." + key);
-                kaworuGif.classList.add("gif-kaworu");
+               var kaworuAudio = new Audio("sounds/Kaworu.mp3");
+                kaworuAudio.play();
+                var kaworuGif = document.querySelector("." + key);
+                    kaworuGif.classList.add("gif-kaworu");
                 
             
                 setTimeout(() => {
@@ -48,8 +48,8 @@ function caseSound(key) {
             break;
        
             case "d":
-               var tom1 = new Audio("sounds/Misato.mp3");
-                tom1.play();
+               var misatoAudio = new Audio("sounds/Misato.mp3");
+                misatoAudio.play();
                 var misato = document.querySelector("." + key);
                 misato.classList.add("gif-misato");
                 setTimeout(() => {
@@ -75,7 +75,7 @@ function caseSound(key) {
             break;
        
             case "k":
-                var asukaAudio = new Audio("sounds/Asuka.mp3");
+                var asukaAudio = new Audio("sounds/asuka.mp3");
                 asukaAudio.play();
                 var asukaGif = document.querySelector("." + key);
                 asukaGif.classList.add("gif-asuka");
