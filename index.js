@@ -34,7 +34,7 @@ function caseSound(key) {
             
                break;
             case "s":
-               var snare = new Audio("sounds/kaworu.mp3");
+               var snare = new Audio("sounds/Kaworu.mp3");
             snare.play();
             var kaworuGif = document.querySelector("." + key);
                 kaworuGif.classList.add("gif-kaworu");
